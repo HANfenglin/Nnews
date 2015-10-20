@@ -9,4 +9,6 @@
 #ifndef Project_URLHeader_h
 #define Project_URLHeader_h
 
+#define qgUrl @"http://c.3g.163.com/nc/article/list/T1348650839000/0-20.html"
+
 #endif

@@ -15,9 +15,13 @@
 #import "HeadLineImage.h"
 #import "NewsViewController.h"
 #import "MyTableViewController.h"
+#import "QGTableViewController.h"
+// 情感 头文件引用
 
-
-
+#import "QGheaderModel.h"
+#import "QGdata.h"
+#import "QGTableViewCell.h"
+#import "QGTwoTableViewCell.h"
 
 #define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
 #define kScreenHight CGRectGetHeight([UIScreen mainScreen].bounds)

@@ -57,13 +57,7 @@
         self.array = array;
         
          [self.tableView reloadData];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            
-//           
-//        });
-//        
-        
-        
+       
     }];
     
     
@@ -168,11 +162,11 @@
 -(void)setUpUI
 {
     // 定义一个view 用来放轮播图00000
-    self.view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 50, CGRectGetWidth(self.view.frame) , 180)];
+    self.view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 50, CGRectGetWidth(self.view.frame) , 220)];
     //view1.backgroundColor = [UIColor redColor];
     //self.edgesForExtendedLayout = UIRectEdgeNone;
     // 轮播图的实现
-    self.HeadScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 160)];
+    self.HeadScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200)];
 
     self.HeadScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.HeadScrollView.frame) * self.array1.count, 0);
     self.HeadScrollView.backgroundColor = [UIColor orangeColor];

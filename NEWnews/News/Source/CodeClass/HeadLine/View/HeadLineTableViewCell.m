@@ -17,7 +17,7 @@
 {
     if (_headLineImage == nil)
     {
-        self.headLineImage = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 80,80)];
+        self.headLineImage = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 100,80)];
         //self.picImageView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:_headLineImage];
     }
@@ -29,7 +29,7 @@
 {
     if (_HeadtitleLable == nil)
     {
-        self.HeadtitleLable = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.headLineImage.frame), CGRectGetMinY(self.headLineImage.frame), 250, 40)];
+        self.HeadtitleLable = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.headLineImage.frame)+5, CGRectGetMinY(self.headLineImage.frame), 250, 30)];
         //self.songLable.backgroundColor = [UIColor grayColor];
         [self.contentView addSubview:_HeadtitleLable];
     }
@@ -41,9 +41,10 @@
 {
     if (_headDegest == nil)
     {
-        self.headDegest = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.headLineImage.frame), CGRectGetMinY(self.headLineImage.frame) + 25, 250, 40)];
+        self.headDegest = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.HeadtitleLable.frame), CGRectGetMaxY(self.HeadtitleLable.frame) + 5, CGRectGetWidth(self.HeadtitleLable.frame), CGRectGetHeight(self.HeadtitleLable.frame)+10)];
         self.headDegest.font = [UIFont systemFontOfSize:14];
-        self.headDegest.numberOfLines = 0;
+        self.headDegest.numberOfLines = 2;
+        self.headDegest.textColor = [UIColor grayColor];
         //self.songLable.backgroundColor = [UIColor grayColor];
         [self.contentView addSubview:_headDegest];
     }
